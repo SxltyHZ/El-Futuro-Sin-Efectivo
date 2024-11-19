@@ -1,0 +1,426 @@
+/********************************/
+/*estilos generales de la página*/
+/********************************/
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+* { /*reseteo todos los elementos para que por default tengan 
+	un margen 0 y padding 0 y un modelo de caja tipo border-box*/
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif; /*especifico el nombre y familia de la tipografia a usar*/
+}
+html {
+  scroll-behavior: smooth; /*para desplazarse "scrolear" suavemente dentro de la página al presionar un enlace*/
+}
+/***************************************************/
+
+
+/**********************************/
+/*estilos para header de la página*/
+/**********************************/
+header {/*caracteristicas elementos dentro del header de la pagina*/
+	display: inline-flex;
+	align-items: center;
+	font-size: 1rem; /*tamaño de las fuentes que aprecen en el header*/
+  	background-color: #EDF6F9;  /*color fondo encabezado*/
+    height: 130px;  /* altura del encabezado, equivale a 5.5em*/
+    padding-left: 10%; /*hago un espacio a la izquierda al interior del contenedor header de 10% del ancho del viewport*/
+    padding-right: 10%; /*hago un espacio a la derecha al interior del contenedor header de 10% del ancho del viewport*/
+    transition: 100ms; /*para la transicion con media queries diseño responsivo*/
+	color: #014A50;
+	border-bottom: 1px solid #014A50;
+
+}
+@media screen and (max-width: 700px) {
+header {
+	height: auto;  /* altura del encabezado, equivale a 5.5em*/
+	padding: 1rem;
+	}
+}
+.menu-container {/*caracteristicas elementos en contenedor con la clase menu-container*/
+  	display: flex; /*tipo de layout felxbox*/
+  	flex-direction: column; /*rederizara/dibujara los items/elementos hijos en el layout 
+  	como una columna, un contenedor o un item sobre el otro */
+}
+.identificador {/*caracteristicas elementos en contenedor con la clase identificador*/
+  	/*border: 5px solid #222;  /* For debugging */
+  	width: 100%; /*ancho que tendra el contenedor con clase menu*/
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	justify-content: center; /*defino la alineación horizontal de los items hijos al centro*/
+}
+.identificador img{/*caracteristicas imagen identificadora dentro del contenedor con clase identificador*/
+	margin-top: 15px; /*un margen arriba de 15 px*/
+    height: 54.61px; /*ancho que tendra la imagen identificadora*/
+}
+.ligas-secciones{/*caracteristicas elementos en contenedor con la clase secciones*/
+	/*border: 5px solid #555;  /* For debugging */
+	font-family: "inter", sans-serif;
+	width: 100%; /*ancho que tendra el contenedor con clase menu*/
+	display: flex; /*sera un elemento/item de tipo flex*/
+	justify-content: space-between;
+	color: #014A50; /*defino la alineación horizontal de los items hijos diciendo
+	cuando hay mas de uno distribuya el esapcio restante entre los espacios de cada elemento/item*/
+}
+.ligas-secciones a{/*caracteristicas elementos tipo enlace dentro del contenedor con clase secciones*/
+	color: #014A50; /*color que tendran las fuentes de los enlaces*/
+	text-decoration: none; /*le quito decoraciones a los enlaces, saeln sin subrayar ahora*/
+  	font-weight: bold; /*tipo de letra bold*/
+ 	margin-top: 10px;
+ 	transition: 50ms; /*para la transicion con media queries diseño responsivo*/
+}
+.ligas-secciones a:hover{
+  transform: scale(1.03);
+  transition: 50ms;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px) {
+  .ligas-secciones {
+    flex-direction: column;
+    text-align: center;
+    }
+ }
+/***************************************************/
+
+
+/**Estilos de Texto**/
+p {
+	color: #014A50;
+	font-family: "Inter",sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+
+}
+
+h1 {
+	color: #014A50;
+	font-family: "Inter", sans-serif;
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 120%;
+}
+
+h2 {
+	color: #014A50;
+	font-family: "Inter", sans-serif;
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 120%;
+}
+
+h3 {
+	color: #014A50;
+	font-family: "Inter", sans-serif;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 120%;
+}
+
+ul {
+	color: #014A50;
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+}
+
+
+/********************************/
+/*estilos para body de la página*/
+/********************************/
+.secciones {/*caracteristicas elementos en contenedor con la clase menu-container*/
+  	display: inline-flex; /*tipo de layout felxbox*/
+  	flex-direction: column; /*rederizara/dibujara los items/elementos hijos en el layout 
+  	como una columna, un contenedor o un item sobre el otro */
+  	padding-left: 10%; /*hago un espacio a la izquierda al interior del contenedor header de 10% del ancho del viewport*/
+    padding-right: 10%; /*hago un espacio a la derecha al interior del contenedor header de 10% del ancho del viewport*/
+	padding-top: 5%;
+	padding-bottom: 5%;
+	gap: 4rem;
+	background-color: #fff;
+	
+}
+
+.seccion-contenedor {
+	display: inline-flex;
+	padding: 4rem;
+	align-items: center;
+	gap: 1rem;
+	background-color: #EDF6F9;
+	border-radius: 4rem;
+	align-items: center;
+}
+.texto-secc {
+	display: inline-flex; /*sera un elemento/item de tipo flex*/
+	flex-direction: column; /*rederizara/dibujara los items/elementos hijos en el layout 
+  	como una columna, un contenedor o un item sobre el otro */
+	width: 50%;
+}
+.texto-secc h1{
+	display: flex; /*sera un elemento/item de tipo flex*/
+	justify-content: center; /*defino la alineación horizontal de los items hijos al centro*/
+	margin-top: 25px;
+}
+.texto-secc p{
+	font-size: 1rem;
+	display: flex; /*sera un elemento/item de tipo flex*/
+	margin-top: 10px;
+}
+.contenedor-imagen {
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center;
+	width: 50%;
+}
+.imgs-secc-1{
+	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center; 
+	width: 50%;
+}
+.par-imgs-escritorio{/*caracteristicas elementos en contenedor con la clase secciones*/
+	/*border: 5px solid #555;  /* For debugging */
+	width: 65%; /*ancho que tendra el contenedor con clase menu*/
+	display: flex; /*sera un elemento/item de tipo flex*/
+	justify-content: space-around; /*defino la alineación horizontal de los items hijos diciendo
+	cuando hay mas de uno distribuya el esapcio restante entre los espacios de cada elemento/item*/
+}
+.par-imgs-escritorio img{
+	width: 50%;
+	display: flex; /*sera un elemento/item de tipo flex*/
+}
+.par-imgs-escritorio img:hover{
+  transform: scale(1.03);
+  transition: 200ms;
+}
+.par-imgs-escritorio p{
+	width: 40%;
+	font-size: 16pt;
+	font-style: italic;
+	text-align: center;
+	display: flex; /*sera un elemento/item de tipo flex*/
+}
+.par-imgs-mobile{/*caracteristicas elementos en contenedor con la clase secciones*/
+	display: none;
+}
+.par-imgs-mobile img{
+	display: none;
+}
+.par-imgs-mobile p{
+	display: none;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px) {
+
+	.seccion-contenedor {
+		display: inline-flex;
+		flex-direction: column;
+		padding: 1.5rem;
+		align-items: center;
+		gap: 1rem;
+		background-color: #EDF6F9;
+		border-radius: 2rem;
+	}
+
+	.texto-secc p{
+		font-size: 14pt;
+		width: 100%;
+	}
+	.par-imgs-escritorio{/*caracteristicas elementos en contenedor con la clase secciones*/
+		display: none;
+	}
+	.par-imgs-escritorio img{
+		display: none;
+	}
+	.par-imgs-escritorio img:hover{
+	 	display: none;
+	}
+	.par-imgs-escritorio p{
+		display: none;
+	}
+	.par-imgs-mobile{/*caracteristicas elementos en contenedor con la clase secciones*/
+		/*border: 5px solid #555;  /* For debugging */
+		width: 100%; /*ancho que tendra el contenedor con clase menu*/
+  		display: flex; /*sera un elemento/item de tipo flex*/
+  		flex-direction: column;
+  		align-items: center; 
+	}
+	.par-imgs-mobile img{
+		width: 100%;
+		transition: 200ms;
+		display: flex; /*sera un elemento/item de tipo flex*/
+	}
+	.par-imgs-mobile img:hover{
+	 	transform: scale(1.03);
+  		transition: 200ms;
+	}
+	.par-imgs-mobile p{
+		width: 100%;
+		font-size: 12pt;
+		font-style: italic;
+		text-align: center;
+		display: flex; /*sera un elemento/item de tipo flex*/
+	}
+ }
+.contenedor-imagen img{
+	display: flex; /*sera un elemento/item de tipo flex*/
+	width: 50%;
+	transition: 200ms;
+}
+.contenedor-imagen img:hover{
+  transform: scale(1.03);
+  transition: 200ms;
+}
+.contenedor-imagen p{
+	width: 50%;
+	text-align: center;
+	font-size: 16pt;
+	font-style: italic;
+	display: flex; /*sera un elemento/item de tipo flex*/
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.contenedor-imagen img{
+		width: 100%;
+		transition: 200ms;
+	}
+	.contenedor-imagen p{
+		width: 100%;
+		font-size: 12pt;
+	}
+}
+.contenedor-imagen-secc4{
+	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center;
+}
+.contenedor-imagen-secc4 p{
+	width: 80%;
+	text-align: center;
+	font-style: italic;
+	font-size: 16pt;
+	display: flex; /*sera un elemento/item de tipo flex*/
+}
+.contenedor-imagen-secc4 img{
+	display: flex; /*sera un elemento/item de tipo flex*/
+	width: 80%;
+	transition: 200ms;
+}
+.contenedor-imagen-secc4 img:hover{
+  transform: scale(1.03);
+  transition: 200ms;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.contenedor-imagen-secc4 p{
+		width: 100%;
+		font-size: 12pt;
+	}
+	.contenedor-imagen-secc4 img{
+		display: flex; /*sera un elemento/item de tipo flex*/
+		width: 100%;
+		transition: 200ms;
+	}
+}
+/***************************************************/
+
+
+
+
+
+
+/**********************************/
+/*estilos para footer de la página*/
+/**********************************/
+footer {
+  	background-color: #EDF6F9;/*color fondo pie de pagina*/
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center; 
+}
+.footer-item{
+	margin-top: 47px;
+	width: 100%;
+  	display: flex; /*sera un elemento/item de tipo flex*/
+	flex-direction: row;
+  	justify-content: center; /*defino la alineación horizontal de los items hijos al centro*/
+}
+.footer-item img{
+	height: 24px;
+	margin-right: 35px;
+
+}
+.copyright{
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 49px;
+	margin-bottom: 95px;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.footer-item{
+  		flex-direction: row;
+  		align-items: center; 
+		gap: 1rem;
+	}
+	.footer-item img{
+		height: 24px;
+		margin-top: 35px;
+		margin-right: 0px;
+	}
+	.copyright{
+		font-size: 12pt;
+	}
+}
+/***************************************************/
+
+
+
+
+
+/*********************************/
+/*estilos para icono hacia arriba*/
+/*********************************/
+.ir-arriba {
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center; 
+}
+.ir-arriba img{
+  	height: 60px;
+  	padding-right: 30px;
+  	text-decoration: none;
+  	cursor:pointer;
+  	position:fixed;
+ 	bottom:20px;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.ir-arriba img{
+		height: 50px;
+  		padding-right: 0px;
+	}
+}
+.ir-arriba img:hover{
+	transform: scale(1.1);
+  	transition: 100ms;
+}
+/***************************************************/

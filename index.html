@@ -1,0 +1,260 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>El Futuro Sin Efectivo</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/clickpay.svg">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Mundo Digitalizado</a>
+          <a href="#secc2">La Evolución</a>
+          <a href="#secc3">Ventajas y Desventajas</a>
+          <a href="#secc4">Casos de Estudio</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Hacia un Mundo Digitalizado</h1>
+				<br>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En un mundo cada vez más interconectado, la transición hacia un sistema de pagos completamente digital está transformando las economías globales. Esta tendencia ha sido impulsada por la búsqueda de mayor conveniencia, seguridad y eficiencia en las transacciones, pero también plantea desafíos significativos.
+					En esta página explicaremos cómo hemos llegado hasta aquí, cuáles son los beneficios y riesgos de un mundo sin efectivo, y examinaremos ejemplos concretos de países que lideran esta transformación.
+					</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/fly-money.svg" title="Img 1a">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/fly-money.svg" title="Img 1a">
+	    
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>La Evolución de los Medios de Pago</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Durante siglos, el dinero en efectivo ha sido el principal medio de intercambio económico, desde monedas de metales preciosos hasta billetes de papel. Sin embargo, el avance de la tecnología ha introducido formas más eficientes y seguras de realizar pagos:
+				</p>
+		        <br>
+				<ul>
+					<li><strong>Década de 1950:</strong> Aparición de las primeras tarjetas de crédito.</li>
+					<li><strong>Década de 2000:</strong> Popularización de los pagos en línea con servicios como PayPal.</li>
+					<li><strong>Años recientes:</strong> Incremento en el uso de pagos móviles, QR, y criptomonedas</li>
+				</ul><!--etiqueta para un brinco de renglón-->
+		        <br>
+				<p>La transición al dinero digital ha sido impulsada por la necesidad de soluciones rápidas y seguras para el comercio global. Sin embargo, también plantea preguntas sobre accesibilidad, seguridad y privacidad.</p><!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		      
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/story.svg" title="Img 2">
+        		<!--texto para la imagen-->
+        		
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+		<div class="title=balanza">
+			<h1> La Balanza de los Pagos Digitales</h1>
+		</div>
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+			
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h2>Ventajas</h2>
+				<br>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+				<h3>Reducción del Crimen</h3>
+				<br>
+		        <p>Al eliminar el efectivo, se reduce la facilidad para actividades ilícitas como el lavado de dinero y los robos.
+				</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <h3>Mayor Eficiencia</h3>
+		        <p>Las transacciones digitales son rápidas, fáciles de rastrear y reducen el manejo físico de dinero.
+				</p>
+				<br>
+				<h3> Inclusión Financiera </h3>
+				<p>
+					Los pagos digitales pueden llegar a zonas remotas y poblaciones que antes no tenían acceso a servicios bancarios.
+				</p>
+				<br>
+				<h3>Datos para Decisiones Informadas</h3>
+				<p>Los datos generados ayudan a gobiernos y empresas a planificar políticas más efectivas</p>
+				<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/ventajas.svg" title="Img 3">
+        		<!--texto para la imagen-->
+        	
+    		</div>
+			<!--Aqui Inicia Desventajas-->
+			<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h2>Desventajas</h2>
+		        <br>
+				<h3>Exclusión de Grupos Vulnerables</h3>
+				<p>
+					No todos tienen acceso a tecnología o cuentas bancarias, dejando a ciertas personas fuera del sistema.
+				</p>
+				<br>
+				<h3>Pérdida de Privacidad</h3>
+				<br>
+				<p>
+					Cada transacción deja un rastro que podría ser utilizado para vigilancia o comercio de datos.
+				</p>
+				<br>
+				<h3> Riesgo de Fallas Tecnológicas </h3>
+				<br>
+				<p>
+					Los sistemas digitales dependen de redes y servidores que pueden fallar, causando caos económico.
+				</p>
+				<br>
+				<h3>Impacto en Grupos Específicos</h3>
+				<p>
+					Personas mayores o con discapacidades pueden enfrentar barreras para adaptarse al cambio.
+				</p>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/desventajas.svg" title="Img 3">
+        		<!--texto para la imagen-->
+        	
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+		<div class="casos-de-estudio" id="casos=de=estudio">
+			<h1> Casos de Estudio </h1>
+		</div>
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h2>Lugares que Lideran la Transformación</h2>
+		        <br>
+				<h3> Suecia </h3>
+				<br>
+				<p>
+					Suecia es uno de los países más avanzados en la eliminación del efectivo, con menos del 13% de las transacciones 
+					realizadas en metálico. Esta transición ha sido impulsada por la confianza en los sistemas digitales y el acceso 
+					masivo a tecnología. Sin embargo, aún se debate cómo incluir a los ancianos y a las zonas rurales.
+				</p>
+				<br>
+				<h3>China</h3>
+				<br>
+				<p>
+					China ha revolucionado los pagos móviles con aplicaciones como WeChat Pay y Alipay, que son 
+					utilizadas para todo, desde comprar en mercados callejeros hasta pagar impuestos. Esto ha reducido 
+					significativamente el uso de efectivo, pero también ha generado preocupaciones sobre la vigilancia estatal.
+				</p>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/super-money.svg" title="Img 4">
+        		<!--texto para la imagen-->
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/facebook.svg" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/x.svg" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/instagram.svg" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">Todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
