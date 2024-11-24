@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- A-Frame-->
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js/"></script> 
-        <!--AR.JS-->
-        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+        <!-- A-Frame -->
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> 
+        <!-- AR.js -->
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.min.js"></script>
     </head>
-    <body style="margin : 0px; overflow: hidden;">
-        <a-escene embbeded arjs>
-        <a-marker preset="hiro">
-            <a-sphere position="0 0 0" radius="0.6"  color="#EF2D5E"></a-sphere>
-        </a-marker>    
-        </a-escene>
+    <body style="margin: 0; overflow: hidden;">
+        <!-- A-Frame Scene -->
+        <a-scene embedded arjs>
+            <a-marker preset="hiro">
+                <a-sphere position="0 0.5 0" radius="0.3" color="#EF2D5E"></a-sphere>
+            </a-marker>
+        </a-scene>
     </body>
-
 </html>
